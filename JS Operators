@@ -1,0 +1,69 @@
+
+JAVASCRIPT OPERATORS:
+1)Arithmetic :
++ - * 
+Multiplication
+Division
+Assignment :
+ Var student = “swetha”
++=
+-=/=
+%=
+Logical operators:
+And      -     &&
+T and T       =      T
+Or     -       ||
+T or F      =      F
+Not       -        !
+ 
+RELATIONAL (COMPARISION) VALUES
+
+        <.>,>=,=,<=,==,===,!=,!===
+        == -equality
+Conditional operator; Ternary Operator(?)
+First evaluate an expression for a true or false ;
+Syntax :
+Condition ?e1
+
+************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+    // let a= 105
+    // let b= '105'
+    // b=30
+
+     //b=b-30
+     //document.write(a!==b,"<br>")
+
+     //document.write(a>b && b>11,"<br>")
+     //document.write(a>b || b>11,"<br>")
+     //document.write(b,"<br>")
+     //document.write(a,"<br>")
+
+
+     //document.write(!(false),"<br>")
+     //document.write(!(a>b),"<br>")
+    /// document.write(a/b,"<br>")
+     //document.write(a*b,"<br>")
+     //document.write(a**b)
+     let t=41 
+     let r=(t>40)? "ac-on":"ac-off"
+     document.writeln(r,"<br>")
+     let a=parseInt(prompt())
+     
+     let b=parseInt(prompt())
+    
+     document.writeln(typeof(a))
+     document.writeln(typeof(b))
+     documnet.write(a+b)
+    </script>
+</body>
+</html>
