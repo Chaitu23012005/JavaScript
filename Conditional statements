@@ -1,0 +1,37 @@
+Conditional statements:
+	To make the set instructions execute only when the given condition is Truw
+	Used to decide whether the code has to be executed or skip based on the given condition
+	line-line(sequence)
+block of code: set of instructions
+	It will execute only when the condition is true
+
+Condition: An expression that evaluates a result (True or False)
+	Ex: console.log (5>6);
+Methods:
+	if, if-else, else, switch, Ternary operator
+
+
+*******
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let A = parseInt(prompt())
+        let B = parseInt(prompt())
+        const sum =A+B
+        if ((A>300 || B>300) && (sum<500)) {
+            document.write("Can team up","<br>")
+        }
+        else{
+            document.write("cannot team up","<br>")
+        }
+    </script>
+    
+</body>
+</html>
