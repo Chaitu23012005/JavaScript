@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // let A = parseInt(prompt())
+        // let B = parseInt(prompt())
+        
+        // if ((A%2==0 && A%3==0)) {
+        //     document.write(A+" is divisible by both 2 and 3","<br>")
+        // }
+        // else{
+        //     document.write(A+" is not divisible by both 2 and 3","<br>")
+        // }
+        // let a = parseInt(prompt())
+        // let b = parseInt(prompt())
+        // let c=  parseInt(prompt())
+        // if(a>(b,c)){
+        //     document.write(a+" is greater than "+b +" and " +c);
+        // }
+        // else if(b>(a,c)){
+        //     document.write(b+" is greater than "+a+" and "+c);
+        // }else if(c>(b,a)){
+        //     document.write(c+" is greater than "+b+" and "+a);
+        // }else{
+        //     document.write("Invalid Input");
+        // }365
+        // let wD =parseInt(prompt());
+        // let P = parseInt(prompt());
+        // let a = (P/wD)*100;
+        // document.write(a,"<br>")
+        // if(a<75){
+        //     document.write("You are not eligible","<br>");
+        // }
+        // else{
+        //     document.write("You are Eligible");
+        // }
+        let salary=parseInt(prompt())
+        let service=parseFloat(prompt())
+        if(service>=10){
+            let a = salary*0.01
+            let d =salary+a
+            alert("you will get 10% Bonus, The salary will be"+d)
+        }
+        else if(service >=6 && service<10){
+            let b = salary*0.08
+            let e = salary+b
+            alert("you will get 8% Bonus, The salary will be "+e)
+        }else if(service >1 &&service<=5){
+            let c=salary*0.05
+            let f= salary+c
+            alert("you will get 5% Bonus, The salary will be "+f)
+        }
+        
+    </script>
+    
+</body>
+</html>
