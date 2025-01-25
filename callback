@@ -37,4 +37,19 @@ function greet(name, callback) {
             console.log(`Hello, ${name}!`);
         });
 Exp: we didn't pass a named function like goodbye;
-Instead of that we define an anonymous function directly 
+Instead of that we define an anonymous function directly within the function call
+
+Ex: 4
+Asynchronous callback with seTimeout;
+code:
+function fetchData(callback){
+    console.log("Fetching data...")
+}seTimeout(function(){
+    console.log("Data fetched...");
+    callback()
+    ///executes callback after a delay
+}2000);
+function processData(){
+    console.log("processing  the fetched data...")
+}
+fetchData(processData);
