@@ -1,0 +1,40 @@
+Callback:
+You can pass the callback function as argument to another function
+execution: the function receiving the callback will execute the callback at some point during its executions(often at the end or after an asynchronous operation is done)
+Ex:
+function mainFunction(calback){
+    console.log("Executing main function")
+    callback() //here we call the callback function
+}
+function callbackFunction(){
+    console.logs("callbackFunction executed")
+}
+mainFunction(callbackFunction)
+EXP:
+mainFunction takes a callback as a parameter
+callbackFunction is passed to mainFunction inside the mainFunction, the call function is called with callback()
+
+ex: 2
+//Passing a Named function as a callback
+function greet(name, callback){
+    console.log("hello"+name);
+    callback();
+    //it will execute callback function after greeting 
+}
+function goodbye(){
+    console.log("Goodbye!")
+}
+greet("Kishore", goodbye)
+
+Ex: 3
+//Using an anonymous functions as callback;
+function greet(name, callback) {
+            callback(name);
+        }
+
+        // Pass an anonymous function as a callback
+        greet("John", function (name) {
+            console.log(`Hello, ${name}!`);
+        });
+Exp: we didn't pass a named function like goodbye;
+Instead of that we define an anonymous function directly 
