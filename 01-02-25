@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+
+    </title>
+</head>
+
+<body>
+    <script>
+        const age = parseInt(prompt("Enter your age:"));
+        let citizen = prompt("Are you a citizen? (true/false):").toLowerCase() === "true";
+        let passedTest = age >= 18 && citizen;
+        let failedTest = age < 18 && citizen;
+        let failedTest1 = age >= 18 && !citizen;
+
+        if (passedTest) {
+            document.write("You can vote");
+        } else if (failedTest) {
+            document.write("You cannot vote (age restriction)");
+        } else if (failedTest1) {
+            document.write("You cannot vote (not a citizen)");
+        } else {
+            document.write("Invalid input");
+        }
+
+
+
+    </script>
+</body>
+
+</html>
