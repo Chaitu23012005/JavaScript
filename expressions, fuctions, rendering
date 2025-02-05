@@ -1,0 +1,72 @@
+ReactDOM.createRoot()
+ReactDOM.render() - method is used to display the element 
+Syntax: 
+     <div id="root"> </div>
+    <script>
+        const b=Raect.createElement('hi',{id: 'c'},"Iam Chaitu")
+        const e=document.getElementById('a')
+        const root = ReactDOM.createRoot(e)
+        root.render(b)
+    </script>
+
+Reactelement = what to render
+Container = where to render
+ JSX:
+ JavaScript XML
+ --It is a syntax extension for JS
+ --here we write the html code and this will be translated into JS
+ --Babel is a tool in JSX
+ Syntax: 
+    <div id="a"></div>
+    <script type="text/babel">
+        const element =<h1 className="aa">Welcome</h1>
+        const e=document.getElementById('a')
+        const root=ReactDOM.craeteRoot(e)
+        root.render(element)
+    </script>
+
+Expressions: {}
+   <div id="a"></div>
+    <script type="text/babel">
+        const n=5
+        const m=<h1>{n*2}</h1>
+        const e=document.getElementById('a')
+        const root=ReactDOM.craeteRoot(e)
+        root.render(m)
+    </script>
+
+Render The Component:
+    <div id ='root'></div>
+        <script type="text/babel">
+            const App=()=>{
+                const isloggedIn=true;
+                return(
+                <div>
+                    {isloggedIn?(<h1>Welcome</h1>):(<h1>Please Log In</h1>)}
+                    </div>
+                )
+            }
+            // render the component
+            const root=ReactDOM.createRoot(document.getElementById('root'))
+            root.render(<App/>)
+        </script>
+
+functions:
+    Using a function call:
+    --You can use a function call directly with in the JSX 
+    Syntax: 
+        <div id="a"></div>
+    <script type="text/babel">
+        function getGreeting(name){
+            return `Hello,${name}! Welcome to React`
+        }
+        function Greeting(){
+            const name="Chaitu"
+            return <h1>{getGreeting(name)}</h1>
+        }
+        //calling the function in the jsx
+        //create the root and render the Greeting component
+
+        const root =ReactDOM.createRoot(document.getElementById('a'))
+        root.render(<Greeting/>)
+</script>
